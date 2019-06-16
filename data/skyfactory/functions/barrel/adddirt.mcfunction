@@ -4,3 +4,4 @@ execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelDa
 execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:405}}]}] run replaceitem entity @s armor.head minecraft:poppy{CustomModelData:406} 1
 execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:404}}]}] run replaceitem entity @s armor.head minecraft:poppy{CustomModelData:405} 1
 execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:407}}]},tag=!sf.next] run function skyfactory:barrel/givedirt
+tag @s remove sf.next
