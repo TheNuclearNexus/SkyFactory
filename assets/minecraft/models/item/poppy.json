@@ -1,14 +1,38 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "items/poppy"
+        "layer0": "item/poppy"
     },
     "overrides": [
         {
             "predicate": {
                 "custom_model_data": 404
             },
-            "model": "skyfactory/emptybarrel"
+            "model": "skyfactory/barrel0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 405
+            },
+            "model": "skyfactory/barrel1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 406
+            },
+            "model": "skyfactory/barrel2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 407
+            },
+            "model": "skyfactory/barrel3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 408
+            },
+            "model": "skyfactory/barrel4"
         }
     ]
 }
