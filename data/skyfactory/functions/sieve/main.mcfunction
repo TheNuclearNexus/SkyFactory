@@ -7,3 +7,4 @@ execute as @e[tag=sf.sieve.vil,tag=sf.clicked,distance=..0.5,sort=nearest,limit=
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run replaceitem entity @p[tag=sf.clicker] weapon.mainhand air
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run summon item ~ ~ ~ {Tags:["sf.replacement"],Item:{id:"minecraft:dirt",Count:1b},PickupDelay:1}
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run data modify entity @e[tag=sf.replacement,sort=nearest,limit=1] Item set from entity @e[tag=sf.sieve.vil,distance=..0.5,sort=nearest,limit=1] ArmorItems[2]
+tag @s remove sf.clicked
