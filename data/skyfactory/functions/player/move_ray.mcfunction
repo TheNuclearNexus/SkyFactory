@@ -1,6 +1,6 @@
-execute if entity @e[tag=sf.stopRay,distance=..1,limit=1,sort=nearest] run data modify entity @e[tag=sf.stopRay,distance=..1,limit=1,sort=nearest] ArmorItems[2] set from entity @s ArmorItems[2]
-execute if entity @e[tag=sf.stopRay,distance=..1,limit=1,sort=nearest] run tag @e[tag=sf.stopRay,distance=..1,limit=1,sort=nearest] add sf.clicked
-execute if entity @e[tag=sf.stopRay,distance=..1,limit=1,sort=nearest] run tag @s add sf.hit
+execute if entity @e[tag=sf.stopRay,distance=..3,limit=1,sort=nearest] run data modify entity @e[tag=sf.stopRay,distance=..3,limit=1,sort=nearest] ArmorItems[2] set from entity @s ArmorItems[2]
+execute if entity @e[tag=sf.stopRay,distance=..3,limit=1,sort=nearest] run tag @e[tag=sf.stopRay,distance=..3,limit=1,sort=nearest] add sf.clicked
+execute if entity @e[tag=sf.stopRay,distance=..3,limit=1,sort=nearest] run tag @s add sf.hit
 
 execute unless entity @s[tag=sf.hit] run particle happy_villager ~ ~ ~ 0 0 0 0 1 force @a
 execute unless entity @s[tag=sf.hit] run scoreboard players add @s sf.data 1
