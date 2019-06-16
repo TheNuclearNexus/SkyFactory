@@ -1,0 +1,5 @@
+404 - Empty barrel
+405 - Barrel 1/4
+406 - Barrel 2/4
+407 - Barrel 3/4
+408 - Barrel 4/4
