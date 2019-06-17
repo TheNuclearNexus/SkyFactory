@@ -27,7 +27,14 @@
         {
           "condition": "minecraft:match_tool"
           "predicate": {
-            "sf.hammer": 1
+            "enchantments":[
+              {
+                "enchantment":"skyfactory:hammer",
+                "levels":{
+                  "min": 1
+                }
+              }
+            ]
           }
         }
       ]
