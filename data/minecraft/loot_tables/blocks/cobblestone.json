@@ -27,7 +27,7 @@
         {
           "condition": "minecraft:match_tool"
           "predicate": {
-            "sf.hammer": 1
+            "nbt":"{sf.item:\"skyfactory:hammer\"}"
           }
         }
       ]

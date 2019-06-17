@@ -13,7 +13,7 @@ scoreboard players reset @s sf.rClick
 
 
 # Run hammer functions
-execute if entity @s[nbt={Item:{tag:{sf.item:{"skyfactory:hammer"}}}}] run function skyfactory:player/use_hammer
-execute if score @s sf.m.cob matches 1.. run scoreboard players reset @s sf.m.cob
-execute if score @s sf.m.gra matches 1.. run scoreboard players reset @s sf.m.gra
-execute if score @s sf.m.sand matches 1.. run scoreboard players reset @s sf.m.sand
+#execute if entity @s[nbt={Item:{tag:{sf.item:{"skyfactory:hammer"}}}}] run function skyfactory:player/use_hammer
+#execute if score @s sf.m.cob matches 1.. run scoreboard players reset @s sf.m.cob
+#execute if score @s sf.m.gra matches 1.. run scoreboard players reset @s sf.m.gra
+#execute if score @s sf.m.sand matches 1.. run scoreboard players reset @s sf.m.sand
