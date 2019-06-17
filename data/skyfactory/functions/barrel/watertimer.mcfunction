@@ -1,2 +1,2 @@
-scoreboard players add watertimer sf.data 1
-execute if score watertimer sf.data matches 5.. run function skyfactory:barrel/watercheck
+scoreboard players add @s sf.watertimer 1
+execute if score @s sf.watertimer matches 5.. run function skyfactory:barrel/watercheck
