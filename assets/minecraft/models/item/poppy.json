@@ -81,6 +81,12 @@
                 "custom_model_data": 431
             },
             "model": "skyfactory/water4"
+        },
+                    {
+            "predicate": {
+                "custom_model_data": 432
+            },
+            "model": "skyfactory/crafting_station"
         }
     ]
 }

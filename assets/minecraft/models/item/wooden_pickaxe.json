@@ -1,0 +1,38 @@
+{
+    "parent": "skyfactory:wooden_pickaxe",
+    "textures":{
+      "layer0": "skyfactory/wooden_pickaxe"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 404
+            },
+            "model": "skyfactory/wooden_hammer"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 405
+            },
+            "model": "skyfactory/stone_hammer"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 406
+            },
+            "model": "skyfactory/gold_hammer"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 407
+            },
+            "model": "skyfactory/iron_hammer"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 408
+            },
+            "model": "skyfactory/diamond_hammer"
+        }
+    ]
+}
