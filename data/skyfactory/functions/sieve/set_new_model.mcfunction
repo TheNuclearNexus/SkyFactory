@@ -1,3 +1,10 @@
+tag @s remove sf.has_dirt
+tag @s remove sf.has_dust
+tag @s remove sf.has_sand
+tag @s remove sf.has_gravel
+tag @s remove sf.has_end_stone
+tag @s remove sf.has_netherrack
+
 execute if entity @e[tag=sf.sieve.vil,distance=..0.5,sort=nearest,limit=1,nbt={ArmorItems:[{},{},{id:"minecraft:dirt"},{}]}] run tag @s add sf.has_dirt
 execute if entity @e[tag=sf.sieve.vil,distance=..0.5,sort=nearest,limit=1,nbt={ArmorItems:[{},{},{id:"minecraft:sand"},{}]}] run tag @s add sf.has_sand
 execute if entity @e[tag=sf.sieve.vil,distance=..0.5,sort=nearest,limit=1,nbt={ArmorItems:[{},{},{id:"minecraft:gravel"},{}]}] run tag @s add sf.has_gravel
