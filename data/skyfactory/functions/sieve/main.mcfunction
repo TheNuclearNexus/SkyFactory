@@ -5,4 +5,7 @@ execute if entity @e[tag=sf.sieve.vil,tag=sf.clicked,distance=..0.5,sort=nearest
 execute as @e[tag=sf.sieve.vil,tag=sf.clicked,distance=..0.5,sort=nearest,limit=1] run tag @s remove sf.clicked
 
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:sieve/return_item
+execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:sieve/set_new_model
+execute if entity @s[tag=sf.clicked,tag=!sf.full] run tag @s add sf.full
+
 tag @s remove sf.clicked
