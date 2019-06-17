@@ -9,8 +9,6 @@ execute if entity @s[tag=sf.clicked,tag=sf.full] run playsound minecraft:block.s
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run replaceitem entity @s armor.head poppy{CustomModelData:409}
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tp @e[tag=sf.sieve.vil,distance=..0.5,sort=nearest,limit=1] ~ ~-256 ~
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run function skyfactory:sieve/pick_drop
-execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s remove sf.full
-execute if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:sieve/return_item
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:sieve/set_new_model
@@ -18,4 +16,6 @@ execute if entity @s[tag=sf.clicked,tag=!sf.full] run scoreboard players set @s 
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run tag @s add sf.full
 
 tag @s remove sf.clicked
+execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s remove sf.full
+execute if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 execute if score @s sf.data matches ..0 run scoreboard players reset @s sf.data
