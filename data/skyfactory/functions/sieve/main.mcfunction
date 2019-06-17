@@ -19,3 +19,5 @@ execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorIte
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s remove sf.full
 execute if score @s sf.data matches ..0 run scoreboard players reset @s sf.data
 tag @s remove sf.clicked
+
+execute if entity @s[tag=sf.has_dirt,nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:409}}]}] run tag @s remove sf.has_dirt
