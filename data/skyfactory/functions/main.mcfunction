@@ -1,3 +1,6 @@
+#Sand to Clay
+execute if block ~ ~1 ~ sand as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:431}}]}] run setblock ~ ~1 ~ clay
+
 #Barrel Water Check & Add
 execute if score timer_20 du_data matches 19 as @e[type=armor_stand,tag=sf.barrel] at @s run function skyfactory:barrel/watertimer
 
