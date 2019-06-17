@@ -4,6 +4,7 @@ execute unless entity @s[tag=sf.full] unless entity @a[distance=..5,gamemode=!sp
 execute if entity @e[tag=sf.sieve.vil,tag=sf.clicked,distance=..0.5,sort=nearest,limit=1] run tag @s add sf.clicked
 execute as @e[tag=sf.sieve.vil,tag=sf.clicked,distance=..0.5,sort=nearest,limit=1] run tag @s remove sf.clicked
 
+execute if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 execute if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:sieve/decrease_model
 execute if entity @s[tag=sf.clicked,tag=sf.full] run playsound minecraft:block.sand.place block @a
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run replaceitem entity @s armor.head poppy{CustomModelData:409}
@@ -17,5 +18,4 @@ execute if entity @s[tag=sf.clicked,tag=!sf.full] run tag @s add sf.full
 
 tag @s remove sf.clicked
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s remove sf.full
-execute if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 execute if score @s sf.data matches ..0 run scoreboard players reset @s sf.data
