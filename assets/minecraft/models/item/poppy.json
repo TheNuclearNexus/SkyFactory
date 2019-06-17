@@ -57,6 +57,30 @@
                 "custom_model_data": 421
             },
             "model": "skyfactory/sieve_dirt3"
+        },
+				        {
+            "predicate": {
+                "custom_model_data": 428
+            },
+            "model": "skyfactory/water1"
+        },
+						        {
+            "predicate": {
+                "custom_model_data": 429
+            },
+            "model": "skyfactory/water2"
+        },
+						        {
+            "predicate": {
+                "custom_model_data": 430
+            },
+            "model": "skyfactory/water3"
+        },
+						        {
+            "predicate": {
+                "custom_model_data": 431
+            },
+            "model": "skyfactory/water4"
         }
     ]
 }
