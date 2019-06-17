@@ -4,6 +4,7 @@ scoreboard objectives add sf.rClick minecraft.custom:minecraft.talked_to_village
 scoreboard players set 1 sf.data 1
 scoreboard players set 20 sf.data 20
 scoreboard objectives add sf.watertimer dummy
+scoreboard objectives add sf.useegg minecraft.used:minecraft.ghast_spawn_egg
 
 # Teams
 team add sf.noCllsn
