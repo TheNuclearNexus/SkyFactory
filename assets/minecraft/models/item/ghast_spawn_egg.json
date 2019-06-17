@@ -18,6 +18,13 @@
                 "custom_model_data": 406
             },
             "model": "skyfactory/crafting_station"
-        }
+        },
+        {
+        "predicate": {
+            "custom_model_data": 407
+        },
+        "model": "skyfactory/silkworm"
+    },
+
     ]
 }
