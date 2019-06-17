@@ -26,3 +26,5 @@
 429 - Water Barrel 2/4
 430 - Water Barrel 3/4
 431 - Water Barrel 4/4
+432 - Crafting Station
+433 - Crafting Station GUI
