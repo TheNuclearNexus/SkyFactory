@@ -1,0 +1,1 @@
+give @s minecraft:ghast_spawn_egg{display:{Name:"{\"text\":\"Sieve\",\"italic\":false}"},CustomModelData:405,EntityTag:{id:"minecraft:armor_stand",Small:1b,Marker:1b,Invisible:1b,Tags:["sf.placeSieve","sf.block"]}} 1
