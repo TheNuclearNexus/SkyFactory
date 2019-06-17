@@ -1,0 +1,17 @@
+{
+    "parent": "item/template_spawn_egg",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 404
+            },
+            "model": "skyfactory/barrel0"
+        },
+		        {
+            "predicate": {
+                "custom_model_data": 405
+            },
+            "model": "skyfactory/sieve_empty"
+        }
+    ]
+}
