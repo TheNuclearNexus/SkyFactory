@@ -17,3 +17,9 @@ scoreboard players reset @s sf.rClick
 #execute if score @s sf.m.cob matches 1.. run scoreboard players reset @s sf.m.cob
 #execute if score @s sf.m.gra matches 1.. run scoreboard players reset @s sf.m.gra
 #execute if score @s sf.m.sand matches 1.. run scoreboard players reset @s sf.m.sand
+
+# Run silk worm
+function skyfactory:silkworm/main
+
+# Clear player of filler
+clear @s poppy{CustomModelData:433}

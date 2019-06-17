@@ -21,7 +21,5 @@ execute as @e[type=armor_stand,tag=sf.crafter] at @s if block ~ ~ ~ air run func
 
 #Crafter GUI
 execute as @e[type=armor_stand,tag=sf.crafter] at @s run replaceitem block ~ ~ ~ container.0 minecraft:poppy{display:{Name:"{\"text\":\" \"}"},CustomModelData:433} 1
-clear @a poppy{CustomModelData:433}
 
 # Run Silk Worm main
-execute as @a at @s run function skyfactory/silkworm/main
