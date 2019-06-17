@@ -25,7 +25,7 @@
       ],
       "conditions":[
         {
-          "condition": "minecraft:match_tool"
+          "condition": "minecraft:match_tool",
           "predicate": {
             "nbt":"{sf.item:\"skyfactory:hammer\"}"
           }
