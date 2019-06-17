@@ -6,6 +6,10 @@ execute as @e[tag=sf.sieve.vil,tag=sf.clicked,distance=..0.5,sort=nearest,limit=
 
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:sieve/return_item
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:sieve/set_new_model
+execute if entity @s[tag=sf.clicked,tag=!sf.full] run scoreboard players set @s sf.data 3
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run tag @s add sf.full
 
+execute if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:sieve/decrease_model
+execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run replaceitem entity @s armor.head poppy{CustomModelData:409}  
+execute if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 tag @s remove sf.clicked
