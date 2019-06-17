@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"texture": "skyfactory/machine_crafter_gui"
+		"texture": "skyfactory/crafting_table"
 	},
 	"elements": [
 		{
