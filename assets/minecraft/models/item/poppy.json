@@ -33,6 +33,30 @@
                 "custom_model_data": 408
             },
             "model": "skyfactory/barrel4"
+        },
+		        {
+            "predicate": {
+                "custom_model_data": 409
+            },
+            "model": "skyfactory/sieve_empty"
+        },
+				        {
+            "predicate": {
+                "custom_model_data": 419
+            },
+            "model": "skyfactory/sieve_dirt1"
+        },
+				        {
+            "predicate": {
+                "custom_model_data": 420
+            },
+            "model": "skyfactory/sieve_dirt2"
+        },
+				        {
+            "predicate": {
+                "custom_model_data": 421
+            },
+            "model": "skyfactory/sieve_dirt3"
         }
     ]
 }
