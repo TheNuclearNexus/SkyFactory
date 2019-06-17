@@ -1,4 +1,7 @@
-#Barrel Dirt Check
+#Barrel Weather Check
+execute if score timer_20 du_data matches 20 as @e[type=armor_stand,tag=sf.barrel] at @s run function skyfactory:barrel/watercheck
+
+#Barrel Dirt Add
 execute as @e[type=armor_stand,tag=sf.barrel] at @s if block ~ ~ ~ composter[level=1] run function skyfactory:barrel/adddirt
 
 #Barrel Remove
