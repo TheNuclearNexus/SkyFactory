@@ -18,3 +18,7 @@ execute as @e[tag=sf.block] at @s run function skyfactory:place
 
 #Crafter Remove
 execute as @e[type=armor_stand,tag=sf.crafter] at @s if block ~ ~ ~ air run function skyfactory:crafter/destroy
+
+#Crafter GUI
+execute as @e[type=armor_stand,tag=sf.crafter] at @s run replaceitem block ~ ~ ~ container.0 poppy{CustomModelData:433}
+clear @a poppy{CustomModelData:433}
