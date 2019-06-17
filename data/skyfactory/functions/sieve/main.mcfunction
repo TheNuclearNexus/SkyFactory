@@ -16,6 +16,6 @@ execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:sieve/
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run scoreboard players set @s sf.data 3
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run tag @s add sf.full
 
-tag @s remove sf.clicked
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s remove sf.full
 execute if score @s sf.data matches ..0 run scoreboard players reset @s sf.data
+tag @s remove sf.clicked
