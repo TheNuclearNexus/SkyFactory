@@ -85,20 +85,14 @@
                     {
             "predicate": {
                 "custom_model_data": 432
-<<<<<<< HEAD
             },
             "model": "skyfactory/crafting_station"
-        }
-=======
-                },
-                  "model": "skyfactory/craftingstation"
-            },
-            {
-    "predicate": {
-        "custom_model_data": 433
         },
+                    {
+            "predicate": {
+                "custom_model_data": 433
+            },
           "model": "skyfactory/benchgui"
-    }
->>>>>>> 09342e95701195cf3b47be92dce567a8655ef1ea
+        }
     ]
 }
