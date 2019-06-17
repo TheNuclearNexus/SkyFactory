@@ -1,6 +1,11 @@
 # Data Objectives
 scoreboard objectives add sf.data dummy
 scoreboard objectives add sf.rClick minecraft.custom:minecraft.talked_to_villager
+
+scoreboard objectives add sf.m.cob minecraft.mined:minecraft.cobblestone
+scoreboard objectives add sf.m.gra minecraft.mined:minecraft.gravel
+scoreboard objectives add sf.m.sand minecraft.mined:minecraft.sand
+
 scoreboard players set 1 sf.data 1
 scoreboard players set 20 sf.data 20
 scoreboard objectives add sf.watertimer dummy
