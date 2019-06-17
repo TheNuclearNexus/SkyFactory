@@ -6,3 +6,6 @@ execute as @e[tag=sf.sieve] at @s run function skyfactory:sieve/main
 
 # Run Player main
 execute as @a at @s run function skyfactory:player/main
+
+# Run Block placing
+execute as @e[tag=sf.block] at @s run function skyfactory:place
