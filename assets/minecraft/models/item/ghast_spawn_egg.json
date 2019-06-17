@@ -12,6 +12,12 @@
                 "custom_model_data": 405
             },
             "model": "skyfactory/sieve_empty"
-        }
+        },
+        {
+        "predicate": {
+            "custom_model_data": 406
+        },
+        "model": "skyfactory/craftingstation"
+    }
     ]
 }
