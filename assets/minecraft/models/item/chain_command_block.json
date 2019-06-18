@@ -1,0 +1,14 @@
+{
+    "parent": "block/chain_command_block",
+    "textures": {
+        "layer0": "block/chain_command_block_back"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 404
+            },
+            "model": "skyfactory/stringmesh"
+        }
+    ]
+}

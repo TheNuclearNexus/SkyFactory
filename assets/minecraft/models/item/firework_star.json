@@ -1,0 +1,29 @@
+{
+    "parent": "item/generated",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 404
+            },
+            "model": "skyfactory/resource/ingot"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 405
+            },
+            "model": "skyfactory/resource/dust"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 406
+            },
+            "model": "skyfactory/resource/orechunk"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 407
+            },
+            "model": "skyfactory/resource/orepiece"
+        }
+    ]
+}

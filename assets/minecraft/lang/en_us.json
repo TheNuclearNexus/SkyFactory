@@ -3,5 +3,6 @@
 	"sf.barrel": "Barrel",
 	"sf.sieve": "Sieve",
 	"sf.silkworm": "Silk Worm",
-	"block.minecraft.red_sand": "Dust"
+	"block.minecraft.red_sand": "Dust",
+	"sf.stringmesh": "String Mesh"
 }

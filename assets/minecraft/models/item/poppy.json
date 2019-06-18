@@ -183,6 +183,12 @@
             "custom_model_data":433
          },
          "model":"skyfactory/benchgui"
+      },
+      {
+         "predicate":{
+            "custom_model_data":434
+         },
+         "model":"skyfactory/stringmesh"
       }
    ]
 }
