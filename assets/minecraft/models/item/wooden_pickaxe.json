@@ -8,31 +8,31 @@
             "predicate": {
                 "custom_model_data": 404
             },
-            "model": "skyfactory/wooden_hammer"
+            "model": "skyfactory/hammers/wooden_hammer"
         },
         {
             "predicate": {
                 "custom_model_data": 405
             },
-            "model": "skyfactory/stone_hammer"
+            "model": "skyfactory/hammers/stone_hammer"
         },
         {
             "predicate": {
                 "custom_model_data": 406
             },
-            "model": "skyfactory/gold_hammer"
+            "model": "skyfactory/hammers/gold_hammer"
         },
         {
             "predicate": {
                 "custom_model_data": 407
             },
-            "model": "skyfactory/iron_hammer"
+            "model": "skyfactory/hammers/iron_hammer"
         },
         {
             "predicate": {
                 "custom_model_data": 408
             },
-            "model": "skyfactory/diamond_hammer"
+            "model": "skyfactory/hammers/diamond_hammer"
         }
     ]
 }

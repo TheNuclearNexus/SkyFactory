@@ -1,98 +1,188 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "block/poppy"
-    },
-    "overrides": [
-        {
-            "predicate": {
-                "custom_model_data": 404
-            },
-            "model": "skyfactory/barrel0"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 405
-            },
-            "model": "skyfactory/barrel1"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 406
-            },
-            "model": "skyfactory/barrel2"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 407
-            },
-            "model": "skyfactory/barrel3"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 408
-            },
-            "model": "skyfactory/barrel4"
-        },
-		        {
-            "predicate": {
-                "custom_model_data": 409
-            },
-            "model": "skyfactory/sieve_empty"
-        },
-				        {
-            "predicate": {
-                "custom_model_data": 419
-            },
-            "model": "skyfactory/sieve_dirt1"
-        },
-				        {
-            "predicate": {
-                "custom_model_data": 420
-            },
-            "model": "skyfactory/sieve_dirt2"
-        },
-				        {
-            "predicate": {
-                "custom_model_data": 421
-            },
-            "model": "skyfactory/sieve_dirt3"
-        },
-				        {
-            "predicate": {
-                "custom_model_data": 428
-            },
-            "model": "skyfactory/water1"
-        },
-						        {
-            "predicate": {
-                "custom_model_data": 429
-            },
-            "model": "skyfactory/water2"
-        },
-						        {
-            "predicate": {
-                "custom_model_data": 430
-            },
-            "model": "skyfactory/water3"
-        },
-						        {
-            "predicate": {
-                "custom_model_data": 431
-            },
-            "model": "skyfactory/water4"
-        },
-                    {
-            "predicate": {
-                "custom_model_data": 432
-            },
-            "model": "skyfactory/crafting_station"
-        },
-                    {
-            "predicate": {
-                "custom_model_data": 433
-            },
-          "model": "skyfactory/benchgui"
-        }
-    ]
+   "parent":"item/generated",
+   "textures":{
+      "layer0":"block/poppy"
+   },
+   "overrides":[
+      {
+         "predicate":{
+            "custom_model_data":404
+         },
+         "model":"skyfactory/barrels/barrel0"
+      },
+      {
+         "predicate":{
+            "custom_model_data":405
+         },
+         "model":"skyfactory/barrels/barrel1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":406
+         },
+         "model":"skyfactory/barrels/barrel2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":407
+         },
+         "model":"skyfactory/barrels/barrel3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":408
+         },
+         "model":"skyfactory/barrels/barrel4"
+      },
+      {
+         "predicate":{
+            "custom_model_data":409
+         },
+         "model":"skyfactory/sieves/sieve_empty"
+      },
+      {
+         "predicate":{
+            "custom_model_data":410
+         },
+         "model":"skyfactory/sieves/sieve_dust1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":411
+         },
+         "model":"skyfactory/sieves/sieve_dust2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":412
+         },
+         "model":"skyfactory/sieves/sieve_dust3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":413
+         },
+         "model":"skyfactory/sieves/sieve_sand1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":414
+         },
+         "model":"skyfactory/sieves/sieve_sand2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":415
+         },
+         "model":"skyfactory/sieves/sieve_sand3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":416
+         },
+         "model":"skyfactory/sieves/sieve_gravel1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":417
+         },
+         "model":"skyfactory/sieves/sieve_gravel2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":418
+         },
+         "model":"skyfactory/sieves/sieve_gravel3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":419
+         },
+         "model":"skyfactory/sieves/sieve_dirt1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":420
+         },
+         "model":"skyfactory/sieves/sieve_dirt2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":421
+         },
+         "model":"skyfactory/sieves/sieve_dirt3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":422
+         },
+         "model":"skyfactory/sieves/sieve_endstone1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":423
+         },
+         "model":"skyfactory/sieves/sieve_endstone2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":424
+         },
+         "model":"skyfactory/sieves/sieve_endstone3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":425
+         },
+         "model":"skyfactory/sieves/sieve_netherrack1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":426
+         },
+         "model":"skyfactory/sieves/sieve_netherrack2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":427
+         },
+         "model":"skyfactory/sieves/sieve_netherrack3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":428
+         },
+         "model":"skyfactory/barrels/water1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":429
+         },
+         "model":"skyfactory/barrels/water2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":430
+         },
+         "model":"skyfactory/barrels/water3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":431
+         },
+         "model":"skyfactory/barrels/water4"
+      },
+      {
+         "predicate":{
+            "custom_model_data":432
+         },
+         "model":"skyfactory/crafting_station"
+      },
+      {
+         "predicate":{
+            "custom_model_data":433
+         },
+         "model":"skyfactory/benchgui"
+      }
+   ]
 }

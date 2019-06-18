@@ -5,13 +5,13 @@
             "predicate": {
                 "custom_model_data": 404
             },
-            "model": "skyfactory/barrel0"
+            "model": "skyfactory/barrels/barrel0"
         },
 		        {
             "predicate": {
                 "custom_model_data": 405
             },
-            "model": "skyfactory/sieve_empty"
+            "model": "skyfactory/sieves/sieve_empty"
         },
             {
             "predicate": {
