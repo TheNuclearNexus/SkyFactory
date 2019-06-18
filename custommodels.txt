@@ -28,3 +28,4 @@
 431 - Water Barrel 4/4
 432 - Crafting Station
 433 - Crafting Station GUI
+434 - String Mesh
