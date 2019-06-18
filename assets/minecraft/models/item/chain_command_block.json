@@ -15,6 +15,18 @@
                 "custom_model_data": 405
             },
             "model": "skyfactory/resource/pebble"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 406
+            },
+            "model": "skyfactory/crucible/unfiredcrucible"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 407
+            },
+            "model": "skyfactory/porcelainclay"
         }
     ]
 }

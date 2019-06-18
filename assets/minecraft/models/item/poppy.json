@@ -188,25 +188,55 @@
          "predicate":{
             "custom_model_data":434
          },
-         "model":"skyfactory/stringmesh"
+         "model":"skyfactory/sieves/soulsand1"
       },
       {
          "predicate":{
             "custom_model_data":435
          },
-         "model":"skyfactory/sieves/soulsand1"
+         "model":"skyfactory/sieves/soulsand2"
       },
       {
          "predicate":{
             "custom_model_data":436
          },
-         "model":"skyfactory/sieves/soulsand2"
+         "model":"skyfactory/sieves/soulsand3"
       },
       {
          "predicate":{
             "custom_model_data":437
          },
-         "model":"skyfactory/sieves/soulsand3"
+         "model":"skyfactory/crucible/crucible0"
+      },
+      {
+         "predicate":{
+            "custom_model_data":438
+         },
+         "model":"skyfactory/crucible/crucible1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":439
+         },
+         "model":"skyfactory/crucible/crucible2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":440
+         },
+         "model":"skyfactory/crucible/crucible3"
+      },
+      {
+         "predicate":{
+            "custom_model_data":441
+         },
+         "model":"skyfactory/crucible/crucible4"
+      },
+      {
+         "predicate":{
+            "custom_model_data":442
+         },
+         "model":"skyfactory/crucible/crucible5"
       }
    ]
 }
