@@ -78,6 +78,10 @@
                 {
                   "function": "set_nbt",
                   "tag": "{CustomModelData:405}"
+                },
+                {
+                  "function": "set_name",
+                  "name": {"translate":"sf.pebble","color":"white","italic":false}
                 }
               ]
             }
