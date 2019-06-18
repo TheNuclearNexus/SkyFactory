@@ -1,3 +1,4 @@
+Poppy
 404 - Barrel 0/4
 405 - Dirt Barrel 1/4
 406 - Dirt Barrel 2/4
@@ -28,4 +29,25 @@
 431 - Water Barrel 4/4
 432 - Crafting Station
 433 - Crafting Station GUI
-434 - String Mesh
+
+Ghast Spawn Egg
+404 - Barrel
+405 - Sieve
+406 - Crafting Station
+407 - Silk Worm
+
+Wooden Pickaxe
+404 - Wooden Hammer
+405 - Stone Hammer
+406 - Gold Hammer
+407 - Iron Hammer
+408 - Diamond Hammer
+
+Firework Star
+404 - Ingot
+405 - Dust
+406 - Ore Chunk
+407 - Ore Piece
+
+Chain Command Block
+404 - String Mesh
