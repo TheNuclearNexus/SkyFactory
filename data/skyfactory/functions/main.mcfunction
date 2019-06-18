@@ -22,4 +22,5 @@ execute as @e[type=armor_stand,tag=sf.crafter] at @s if block ~ ~ ~ air run func
 #Crafter GUI
 execute as @e[type=armor_stand,tag=sf.crafter] at @s run replaceitem block ~ ~ ~ container.0 minecraft:poppy{display:{Name:"{\"text\":\" \"}"},CustomModelData:433} 1
 
-# Run Silk Worm main
+# Run Silk Worm Timer
+execute if score timer_20 du_data matches 18 as @e[type=armor_stand,tag=sf.infest] at @s run function skyfactory:silkworm/infesttimer
