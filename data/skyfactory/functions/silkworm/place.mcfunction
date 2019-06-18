@@ -4,4 +4,5 @@ execute if block ~1 ~ ~ #skyfactory:leaves run function skyfactory:silkworm/web/
 execute if block ~-1 ~ ~ #skyfactory:leaves run function skyfactory:silkworm/web/west
 execute if block ~ ~ ~1 #skyfactory:leaves run function skyfactory:silkworm/web/south
 execute if block ~ ~ ~-1 #skyfactory:leaves run function skyfactory:silkworm/web/north
+execute unless block ~ ~1 ~ #skyfactory:leaves unless block ~ ~-1 ~ #skyfactory:leaves unless block ~1 ~ ~ skyfactory:leaves unless block ~-1 ~ ~ #skyfactory:leaves unless block  ~ ~ ~1 #skyfactory:leaves unless block ~ ~ ~-1 #skyfactory:leaves run function skyfactory:give/silkworm
 kill @s
