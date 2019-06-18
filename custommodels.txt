@@ -28,7 +28,10 @@ Poppy
 430 - Water Barrel 3/4
 431 - Water Barrel 4/4
 432 - Crafting Station
-433 - Crafting Station GUI
+433 - Crafting Statin GUI
+434 - Sieve Soulsand 1/3
+435 - Sieve Soulsand 2/3
+436 - Sieve Soulsand 3/3
 
 Ghast Spawn Egg
 404 - Barrel
