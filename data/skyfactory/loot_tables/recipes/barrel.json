@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:ghast_spawn_egg",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {\"translate\":\"sf.barrel\",\"italic\":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{"CustomModelData:404,EntityTag:{id:"minecraft:armor_stand",Small:1b,Marker:1b,Invisible:1b,Tags:["sf.placeBarrel","sf.block"]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
