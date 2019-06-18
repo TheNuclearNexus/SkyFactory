@@ -9,6 +9,12 @@
                 "custom_model_data": 404
             },
             "model": "skyfactory/stringmesh"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 405
+            },
+            "model": "skyfactory/resource/pebble"
         }
     ]
 }

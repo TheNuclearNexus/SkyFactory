@@ -189,6 +189,24 @@
             "custom_model_data":434
          },
          "model":"skyfactory/stringmesh"
+      },
+      {
+         "predicate":{
+            "custom_model_data":435
+         },
+         "model":"skyfactory/sieves/soulsand1"
+      },
+      {
+         "predicate":{
+            "custom_model_data":436
+         },
+         "model":"skyfactory/sieves/soulsand2"
+      },
+      {
+         "predicate":{
+            "custom_model_data":437
+         },
+         "model":"skyfactory/sieves/soulsand3"
       }
    ]
 }
