@@ -5,5 +5,7 @@
 	"sf.silkworm": "Silk Worm",
 	"block.minecraft.red_sand": "Dust",
 	"sf.stringmesh": "String Mesh",
-	"sf.pebble": "Stone Pebble"
+	"sf.pebble": "Stone Pebble",
+	"sf.clay": "Porcelain Clay",
+	"sf.crucible": "Crucible"
 }
