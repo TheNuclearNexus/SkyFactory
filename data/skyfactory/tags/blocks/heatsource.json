@@ -1,0 +1,10 @@
+{
+	"values":[
+		"minecraft:fire",
+		"minecraft:torch",
+		"minecraft:lava",
+		"minecraft:flowing_lava",
+		"minecraft:magma_block",
+		"minecraft:wall_torch"
+	]
+}

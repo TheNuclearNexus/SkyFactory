@@ -25,5 +25,5 @@ execute as @e[type=armor_stand,tag=sf.crafter] at @s run replaceitem block ~ ~ ~
 # Run Silk Worm Timer
 execute if score timer_20 du_data matches 18 as @e[type=armor_stand,tag=sf.infest] at @s run function skyfactory:silkworm/infesttimer
 
-#Crucible Remove
-execute as @e[type=armor_stand,tag=sf.crucible] at @s if block ~ ~ ~ air run function skyfactory:crucible/destroy
+# Run Crucible main
+execute as @e[tag=sf.crucible] at @s run function skyfactory:crucible/main
