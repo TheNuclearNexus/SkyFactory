@@ -14,9 +14,9 @@ execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0
 
 #Set New Model
 execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:crucible/set_new_model
-execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run function skyfactory:crucible/return_item
-execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run scoreboard players set @s sf.data 3
-execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run tag @s add sf.full
+execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:441}}]}] run function skyfactory:crucible/return_item
+execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:441}}]}] run scoreboard players set @s sf.data 3
+execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:441}}]}] run tag @s add sf.full
 
 #Remove sf.full
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s remove sf.full
