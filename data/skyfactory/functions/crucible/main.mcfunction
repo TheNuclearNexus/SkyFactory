@@ -28,5 +28,3 @@ execute if entity @s[tag=sf.has_cobblestone,nbt={ArmorItems:[{},{},{},{tag:{Cust
 
 #Crucible Remove
 execute as @e[type=armor_stand,tag=sf.crucible] at @s if block ~ ~ ~ air run function skyfactory:crucible/destroy
-
-say main
