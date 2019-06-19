@@ -8,8 +8,8 @@ execute as @e[tag=sf.crucible.vil,tag=sf.clicked,distance=..0.5,sort=nearest,lim
 
 #Add to Model
 execute if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
-execute if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/add_model
-execute if entity @s[tag=sf.clicked,tag=sf.full] run playsound minecraft:block.stone.break block @a
+execute unless @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/add_model
+execute unless @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run playsound minecraft:block.stone.break block @a
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tp @e[tag=sf.crucible.vil,distance=..0.5,sort=nearest,limit=1] ~ ~-256 ~
 
 #Set New Model
