@@ -17,15 +17,11 @@
                   },
                   {
                      "function": "set_name",
-                     "name": {
-                        "translate": "sf.pebble"
-                     }
+                     "name": {"translate": "sf.pebble"}
                   },
                   {
                      "function": "set_nbt",
-                     "tag": {
-                        "CustomModelData": 405
-                     }
+                     "tag": "{CustomModelData: 405}"
                   }
                ]
             }
