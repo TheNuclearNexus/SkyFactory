@@ -7,6 +7,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:netherrack"}}] run tag @s 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:end_stone"}}] run tag @s add sf.readyToSieve
 
 # Check if the player can use the sieve
+tag @s remove sf.readyToCrucible
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:cobblestone"}}] run tag @s add sf.readyToCrucible
 
 # Cast Ray when click
