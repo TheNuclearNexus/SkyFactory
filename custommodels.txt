@@ -32,6 +32,12 @@ Poppy
 434 - Sieve Soulsand 1/3
 435 - Sieve Soulsand 2/3
 436 - Sieve Soulsand 3/3
+437 - Crucible 0/4
+438 - Crucible Cobblestone 1/4
+439 - Crucible Cobblestone 2/4
+440 - Crucible Cobblestone 3/4
+441 - Crucible Cobblestone 4/4
+442 - Crucible Lava
 
 Ghast Spawn Egg
 404 - Barrel
@@ -54,3 +60,6 @@ Firework Star
 
 Chain Command Block
 404 - String Mesh
+405 - Stone Pebble
+406 - Unfired Crucible
+407 - Porcelain Clay
