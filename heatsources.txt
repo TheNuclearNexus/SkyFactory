@@ -1,0 +1,4 @@
+Torch - 1 per second
+Fire - 2 per second
+Lava - 3 per second
+Magma Block - 4 per second
