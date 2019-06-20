@@ -1,5 +1,5 @@
 #Villager Spawn
-execute if entity @a[distance=..5,gamemode=!spectator,tag=sf.readyToCrucible] unless entity @e[tag=sf.crucible.vil,distance=..0.5,sort=nearest,limit=1] run summon villager ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Team:"sf.noCllsn",NoAI:1b,Tags:["sf.crucible.vil","sf.stopRay"],ActiveEffects:[{Id:14b,Amplifier:0b,Duration:19999980,ShowParticles:0b}],VillagerData:{level:1,profession:"minecraft:armorer",type:"minecraft:desert"},Offers:{}}
+execute if entity @a[distance=..5,gamemode=!spectator,tag=sf.readyToCrucible] unless entity @e[tag=sf.crucible.vil,distance=..0.5,sort=nearest,limit=1] unless entity @s[tag=sf.melting] run summon villager ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Team:"sf.noCllsn",NoAI:1b,Tags:["sf.crucible.vil","sf.stopRay"],ActiveEffects:[{Id:14b,Amplifier:0b,Duration:19999980,ShowParticles:0b}],VillagerData:{level:1,profession:"minecraft:armorer",type:"minecraft:desert"},Offers:{}}
 execute unless entity @s[tag=sf.full] unless entity @a[distance=..5,gamemode=!spectator,tag=sf.readyToCrucible] if entity @e[tag=sf.crucible.vil,distance=..0.5,sort=nearest,limit=1] run tp @e[tag=sf.crucible.vil,distance=..0.5,sort=nearest,limit=1] ~ ~-256 ~
 
 #Villager Clicked
@@ -9,16 +9,21 @@ execute as @e[tag=sf.crucible.vil,tag=sf.clicked,distance=..0.5,sort=nearest,lim
 #Add to Model
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/add_model
+execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/return_item
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run playsound minecraft:block.stone.break block @a
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tp @e[tag=sf.crucible.vil,distance=..0.5,sort=nearest,limit=1] ~ ~-256 ~
+execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s add sf.melting
+
+# Start melting
 
 #Set New Model
-execute if entity @s[tag=sf.clicked,tag=!sf.full] run function skyfactory:crucible/set_new_model
-execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run function skyfactory:crucible/return_item
-execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run scoreboard players set @s sf.data 3
-execute if entity @s[tag=sf.clicked,tag=!sf.full] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run tag @s add sf.full
+execute if entity @s[tag=sf.clicked,tag=!sf.full,tag=!sf.melting] run function skyfactory:crucible/set_new_model
+execute if entity @s[tag=sf.clicked,tag=!sf.full,tag=!sf.melting] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run function skyfactory:crucible/return_item
+execute if entity @s[tag=sf.clicked,tag=!sf.full,tag=!sf.melting] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run scoreboard players set @s sf.data 3
+execute if entity @s[tag=sf.clicked,tag=!sf.full,tag=!sf.melting] unless entity @s[nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run tag @s add sf.full
 
 #Remove sf.full
+execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s add sf.melting
 execute if entity @s[tag=sf.clicked,tag=sf.full] if score @s sf.data matches ..0 run tag @s remove sf.full
 execute if score @s sf.data matches ..0 run scoreboard players reset @s sf.data
 tag @s remove sf.clicked
