@@ -13,11 +13,13 @@ execute if entity @s[tag=sf.clicked] run data modify entity @s ArmorItems[2] set
 execute if score @s[tag=sf.melting] sf.data matches 0 run tag @s add sf.has_lava
 execute if score @s[tag=sf.melting] sf.data matches 0 run tag @s remove sf.melting
 
-execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run replaceitem entity @p[tag=sf.clicker] weapon.mainhand lava_bucket
+execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run clear @p[tag=sf.clicker] bucket 1
+execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run give @p[tag=sf.clicker] lava_bucket
 execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run playsound minecraft:item.bucket.fill_lava block @a ~ ~ ~
 execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run replaceitem entity @s armor.head poppy{CustomModelData:437}
 execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run tag @s remove sf.clicked
 #Add to Model
+execute if entity @s[tag=sf.clicked,tag=sf.full] unless entity @s[nbt={ArmorItems:{},{},{id:"minecraft:cobblestone"},{}}] run tag @s remove sf.clicked
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/return_item
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/add_model

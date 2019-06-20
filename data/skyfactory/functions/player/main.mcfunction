@@ -9,6 +9,8 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:end_stone"}}] run tag @s a
 # Check if the player can use the sieve
 tag @s remove sf.readyToCrucible
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:cobblestone"}}] run tag @s add sf.readyToCrucible
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:bucket"}}] run tag @s add sf.readyToCrucible
+
 
 # Cast Ray when click
 execute if score @s sf.rClick matches 1.. run function skyfactory:player/create_ray
