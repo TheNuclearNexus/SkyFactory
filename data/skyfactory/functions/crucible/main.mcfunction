@@ -44,6 +44,7 @@ tag @s remove sf.clicked
 #Remove sf.has_cobblestone
 execute if entity @s[tag=sf.has_cobblestone,nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run tag @s remove sf.has_cobblestone
 execute if entity @s[tag=sf.has_cobblestone,nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run tag @s remove sf.has_lava
+execute if entity @s[tag=sf.has_cobblestone,nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run tag @s remove sf.melting
 
 #Crucible Remove
 execute as @e[type=armor_stand,tag=sf.crucible] at @s if block ~ ~ ~ air run function skyfactory:crucible/destroy
