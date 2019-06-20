@@ -92,6 +92,20 @@
             }
           ],
           "name": "minecraft:stick"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions":[
+            {
+              "condition":"minecraft:match_tool",
+              "predicate": {"nbt": "{sf.item:\"skyfactory:crook\"}"}
+            },
+            {
+              "condition":"random_chance",
+              "chance":0.15
+            }
+          ],
+          "name":"minecraft:ghast_spawn_egg"
         }
       ],
       "conditions": [
@@ -146,17 +160,8 @@
             }
           ],
           "name": "minecraft:apple"
-        },
-        {
-          "type": "minecraft:item",
-          "conditions":[
-            {
-              "condition":"minecraft:match_tool",
-              "predicate": {"nbt": "{sf.item:\"skyfactory:crook\"}"}
-            }
-          ],
-          "name":"minecraft:ghast_spawn_egg"
         }
+
       ],
       "conditions": [
         {
