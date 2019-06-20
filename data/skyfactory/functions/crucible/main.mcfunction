@@ -39,3 +39,7 @@ execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelDa
 execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ fire run function skyfactory:crucible/heatsource/fire
 execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ lava run function skyfactory:crucible/heatsource/lava
 execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ magma_block run function skyfactory:crucible/heatsource/magma
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ bedrock run function skyfactory:crucible/heatsource/bedrock
+#Subtract from Timer
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:443}}]}] if score timer_20 du_data matches 17 run scoreboard players remove @s sf.data 1
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:443}}]}] if score @s sf.data matches ..0 run function replaceitem entity @s armor.head minecraft:poppy{CustomModelData:442} 1
