@@ -64,3 +64,6 @@ Chain Command Block
 405 - Stone Pebble
 406 - Unfired Crucible
 407 - Porcelain Clay
+
+Wooden Hoe
+404 - Crook
