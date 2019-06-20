@@ -38,6 +38,7 @@ Poppy
 440 - Crucible Cobblestone 3/4
 441 - Crucible Cobblestone 4/4
 442 - Crucible Lava
+443 - Crucible Converting
 
 Ghast Spawn Egg
 404 - Barrel

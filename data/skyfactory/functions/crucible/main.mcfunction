@@ -33,3 +33,13 @@ execute if entity @s[tag=sf.has_cobblestone,nbt={ArmorItems:[{},{},{},{tag:{Cust
 
 #Crucible Remove
 execute as @e[type=armor_stand,tag=sf.crucible] at @s if block ~ ~ ~ air run function skyfactory:crucible/destroy
+
+#Heat Source Timer
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ #skyfactory:torches run function skyfactory:crucible/heatsource/torch
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ fire run function skyfactory:crucible/heatsource/fire
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ lava run function skyfactory:crucible/heatsource/lava
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ magma_block run function skyfactory:crucible/heatsource/magma
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if block ~ ~-1 ~ bedrock run function skyfactory:crucible/heatsource/bedrock
+#Subtract from Timer
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:443}}]}] if score timer_20 du_data matches 17 run scoreboard players remove @s sf.data 1
+execute as @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:443}}]}] if score @s sf.data matches ..0 run replaceitem entity @s armor.head minecraft:poppy{CustomModelData:442} 1
