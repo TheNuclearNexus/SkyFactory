@@ -19,7 +19,7 @@ execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"
 execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run replaceitem entity @s armor.head poppy{CustomModelData:437}
 execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run tag @s remove sf.clicked
 #Add to Model
-execute if entity @s[tag=sf.clicked,tag=sf.full] unless entity @s[nbt={ArmorItems:{},{},{id:"minecraft:cobblestone"},{}}] run tag @s remove sf.clicked
+execute if entity @s[tag=sf.clicked,tag=sf.full] unless entity @s[nbt={ArmorItems:[{},{},{id:"minecraft:cobblestone"},{}]}] run tag @s remove sf.clicked
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/return_item
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/add_model
