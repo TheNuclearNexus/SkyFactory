@@ -237,6 +237,12 @@
             "custom_model_data":442
          },
          "model":"skyfactory/crucible/crucible5"
+      },
+      {
+         "predicate":{
+            "custom_model_data":443
+         },
+         "model":"skyfactory/crucible/crucible6"
       }
    ]
 }
