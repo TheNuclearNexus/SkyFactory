@@ -11,4 +11,3 @@ execute store result entity @e[tag=sf.replacement,sort=nearest,limit=1] Item.Cou
 tp @e[tag=sf.replacement,sort=nearest,limit=1] @p[tag=sf.clicker]
 stopsound @p[tag=sf.clicker] * minecraft:entity.item.pickup
 tag @p[tag=sf.clicker] remove sf.clicker
-say return_item
