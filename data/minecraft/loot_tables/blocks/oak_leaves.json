@@ -154,7 +154,7 @@
               "condition":"minecraft:match_tool",
               "predicate": {"nbt": "{sf.item:\"skyfactory:crook\"}"}
             }
-          ]
+          ],
           "name":"minecraft:ghast_spawn_egg"
         }
       ],
