@@ -6,6 +6,17 @@ execute unless entity @s[tag=sf.full] unless entity @a[distance=..5,gamemode=!sp
 execute if entity @e[tag=sf.crucible.vil,tag=sf.clicked,distance=..0.5,sort=nearest,limit=1] run tag @s add sf.clicked
 execute as @e[tag=sf.crucible.vil,tag=sf.clicked,distance=..0.5,sort=nearest,limit=1] run tag @s remove sf.clicked
 
+# Copy Item when clicked
+execute if entity @s[tag=sf.clicked] run data modify entity @s ArmorItems[2] set from entity @e[tag=sf.crucible.vil,sort=nearest,limit=1] ArmorItems[2]
+
+# Collect Lava
+execute if score @s[tag=sf.melting] sf.data matches 0 run tag @s add sf.has_lava
+execute if score @s[tag=sf.melting] sf.data matches 0 run tag @s remove sf.melting
+
+execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run replaceitem entity @p[tag=sf.clicker] weapon.mainhand lava_bucket
+execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run playsound minecraft:item.bucket.fill_lava block @a ~ ~ ~
+execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run replaceitem entity @s armor.head poppy{CustomModelData:437}
+execute if entity @s[tag=sf.has_lava,tag=sf.clicked,nbt={ArmorItems:[{},{},{id:"minecraft:bucket"},{}]}] run tag @s remove sf.clicked
 #Add to Model
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run scoreboard players remove @s sf.data 1
 execute unless entity @s[nbt={ArmorItems:[{id:"minecraft:poppy",Count:1b,tag:{CustomModelData:441}}]}] if entity @s[tag=sf.clicked,tag=sf.full] run function skyfactory:crucible/return_item
@@ -30,6 +41,7 @@ tag @s remove sf.clicked
 
 #Remove sf.has_cobblestone
 execute if entity @s[tag=sf.has_cobblestone,nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run tag @s remove sf.has_cobblestone
+execute if entity @s[tag=sf.has_cobblestone,nbt={ArmorItems:[{},{},{},{tag:{CustomModelData:437}}]}] run tag @s remove sf.has_lava
 
 #Crucible Remove
 execute as @e[type=armor_stand,tag=sf.crucible] at @s if block ~ ~ ~ air run function skyfactory:crucible/destroy
